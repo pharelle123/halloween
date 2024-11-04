@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url(./reset.css);
+
+/* theme and variable*/
+:root{
+    --button-primary:#dc143c;
+}
+
+header > h1{
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #ea4335; 
+  line-height: 8.5rem;
+  font-size: 7rem;
+  text-shadow: .2rem .2rem rgb(255, 179, 0), 
+  -.2rem -.2rem   rgb(255, 179, 0),
+  .2rem -.2rem   rgb(255, 179, 0), 
+  -.2rem .2rem rgb(255, 179, 0);
+}
+
+figure, section{
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+figure img{
+    width: 100%; /* 100% de la largeur du parent */ 
+    filter: drop-shadow(0 0 2rem #dc143c);
+}
+footer p{
+    text-align: center;
+}
+figure.gallery-primary{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+figure.gallery-primary figcaption{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4.5rem;
+    padding: 1rem 0;
+
+}
+.btn-default{ /* default button*/
+ display: inline-block;
+ width:max-content ;
+ line-height: 2.5em;
+ padding: .8rem;
+ color: black;
+ background-color: antiquewhite;
+ border-radius: .4em;
+ text-transform: capitalize;
+ text-decoration: none;
+
+}
+
+/* theme button */
+
+.btn-primary{
+ background-color: rgb(60, 163, 226);
+}
+.btn-secondary{
+    background-color: var(--button-primary) ;
+}
+
+/* galerie figcaption titre */
+
+
+figure.gallery-primary img{
+    width: auto;
+    height: 15rem;
+    
+}
